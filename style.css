@@ -1,0 +1,1231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media only screen and (min-width:476px){
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 100%;
+    background-color: #131921;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    color: #fff;
+    position: fixed;
+    z-index: 100;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    height: 58px;
+    width: 98vw;
+    border: 0.1pt solid transparent;
+    margin: 0 auto;
+}
+
+.logo-title{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20vw;
+    border: 0.1pt solid transparent;
+}
+
+#logobox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vw;
+    width: 4vw;
+    border: 0.1pt solid transparent;
+    font-size: 3vw;
+}
+
+#titlebox{
+    display: flex;
+    color: white;
+    height: 7vw;
+    width: 14vw;
+    border: 0.1pt solid transparent;
+}
+/* ............................................. */
+#nav-searchbox{
+    display: flex;
+    justify-content: center;
+    height: 3vw;
+    border: 0.1pt solid transparent;
+    border-radius: 2.5vw;
+    background-color: rgba(255, 255, 255, 0.195);
+    color: transparent;
+    font-size: 2vw;
+    cursor: pointer;
+    position: relative;
+}
+
+#nav-searchbox {
+    height: 3vw;
+    width: 40vw;
+    background-color: transparent;
+    color: #131921;
+}
+
+#searchinput{
+    border: 0.1px solid transparent;
+    height: 3vw;
+    width: 90%;
+    border-top-left-radius: 2.5vw;
+    border-bottom-left-radius: 2.5vw;
+    outline: none;
+    color: #131921;
+    padding-left: 2vw;
+    padding-right: 1vw;
+    font-size: 1.5vw;
+    background-color: #ffffff;
+}
+#nav-searchbox:hover {
+    box-shadow: 0 0 0.1vw 0.1vw rgb(255, 255, 255);
+}
+
+
+
+#searchlogo{
+    display: flex;
+    width: 10%;
+    height: 3vw;
+    border-top-right-radius: 2.5vw;
+    border-bottom-right-radius: 2.5vw;
+    color: #ffffff;
+    background-color: #edab30;
+    background-image: linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    border: 0.1px solid rgba(255, 255, 255, 0.829);
+    justify-content: center;
+}
+
+
+#searchicon{
+    display: none;
+}
+
+
+#darkmode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    height: 3.1vw;
+    width: 3.2vw;
+    font-size: 2vw;
+    background-color: #ffffff72;
+    transition: 0.1s;
+    color: #051937;
+    border: 0.3vw solid transparent;
+    border-radius: 50%;
+}
+
+#darkmode:hover{
+    rotate: 180deg;
+}
+
+
+#nav-options{
+    width: 20vw;
+    height: 98%;
+    border: 0.1px solid transparent;
+    background-color: transparent;
+    display: flex;
+    place-self: right;
+}
+
+
+.nav-btns{
+    height: 8vw;
+    width: 100%;
+    border: 2px solid transparent;
+    display: flex;
+    color: #051937;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+
+.navbtnslogo{
+    display: flex;
+    justify-content: center;
+    height: 3.2vw;
+    width: 3.2vw;
+    border: 0.3vw solid transparent;
+    border-radius: 3.5vw;
+    background-color: #ffffff72;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+
+#nav-user{
+    display: flex;
+    justify-content: center;
+    height: 3.2vw;
+    width: 3.2vw;
+    border: 0.3vw solid transparent;
+    border-radius: 3.5vw;
+    background-color: #ffffff6e;
+    font-size: 2.3vw;
+    color: #051937;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#form-overlay{
+    height: 100vh;
+    width: 100%;
+    background-color: #464444bd;
+    position: absolute;
+    top: 0;
+    backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;  
+    display: flex;
+    z-index: 101;
+}
+
+
+
+
+
+
+
+@keyframes signup {
+     
+}
+
+#signupform{
+    height: 70vh;
+    width: 100%;
+    border: 0.1px solid white;
+    border-radius: 1vw;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    animation: signup 2s  ease-in-out infinite alternate-reverse;
+    display: none;
+    display: block;
+}
+
+
+
+.sfomtop{
+    height: 15%;
+    width: 100%;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+
+#sfomxmark{
+    position: absolute;
+    right: -2vw;
+    top: -3vw;
+    border: 0.1px solid transparent;
+    cursor: pointer;
+    font-size: 1.1vw;
+    color: #ffffff81;
+}
+
+
+
+.sfombody{
+    height: 70%;
+    width: 100%;
+    border: 0.1px solid transparent;
+    place-items: center;
+}
+
+
+
+
+#supform{
+    height: 100%;
+    width: 98%;
+    border: 0.1px solid transparent;
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.supfcontentbox{
+    height: 4.5vw;
+    width: 98%;
+    border: 0.1px solid transparent;
+    place-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.snamesinput{
+    height: 70%;
+    width: 48%;
+    border-radius: 1.5vw;
+    border: none;
+    padding-left: 1.1vw;
+    font-size: 1.4vw;
+}
+.snamesinput:focus{
+    outline: none;
+}
+
+
+.sfdobbox{
+    height: 100%;
+    width: 98%;
+    border-radius: 0.4vw;
+    border: 0.1px solid transparent;
+}
+
+
+.dobtile{
+    display: flex;
+    border: 0.1px solid transparent;
+    justify-content: space-between;
+}
+
+.dobtile p {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#dobalert{
+    display: flex;
+    justify-content: center;
+    height: 1vw;
+    width: 1vw;
+    color: red;
+    background-color: white;
+    border-radius: 50%;
+    border: 0.1px solid transparent;
+}
+
+.dobinputs{
+    height: 3vw;
+}
+
+.input-date-email-pass{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5vw;
+    border: none;
+    outline: none;
+    padding-left: 1vw;
+    padding-right: 1.5vw;
+    font-size: 1.1vw;
+}
+
+#sfomsubmit{
+    height: 3vw;
+    width: 40%;
+    border-radius: 1.5vw;
+    font-size: 1.4vw;
+    color: #fff;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-weight: 700;
+}
+
+
+.sfombottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    border-top: 0.1px solid rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    color: #fff;
+}
+
+#login-form-link-btn{
+    height: 3vw;
+    width: 30%;
+    border-radius: 1.5vw;
+    font-size: 1.4vw;
+    color: #fff;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-weight: 700;
+}
+
+
+
+.Signup-details{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 2vw;
+    height: 200px;
+    width: 200px;
+    border: 1px solid white;
+    color: #fff;
+    place-content: center;
+    opacity: 0;
+}
+
+
+
+
+/* ..................................................... */
+
+#login-form{
+    height: 70vh;
+    width: 100%;
+    border: 0.1px solid white;
+    border-radius: 1vw;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    animation: signup 2s  ease-in-out infinite alternate-reverse;
+    display: block;
+    
+}
+.lfomtop{
+    height: 15%;
+    width: 100%;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+
+#lfomxmark{
+    position: absolute;
+    right: -2vw;
+    top: -3vw;
+    border: 0.1px solid transparent;
+    cursor: pointer;
+    font-size: 1.1vw;
+    color: #ffffff81;
+}
+
+
+
+.lfombody{
+    height: 70%;
+    width: 100%;
+    border: 0.1px solid transparent;
+    place-items: center;
+}
+
+.lfombottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    border-top: 0.1px solid rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    color: #fff;
+}
+
+
+.user-login-logo{
+    display: flex;
+    justify-content: center;
+    height: 22vh;
+    width: 22vh;
+    border: 0.1px solid white;
+    font-size: 20vh;
+    border: 1vw solid white;
+    border-radius: 50%;
+    color: #051937;
+    background-color: #fff;
+    margin-top: 1vh;
+}
+
+
+#loginform{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 1vh;
+    height: 25vh;
+    width: 98%;
+    border: 0.1px solid transparent;
+}
+
+.login-username-inputs{
+    display: flex;
+    justify-content: space-evenly;
+    height: 3.5vw;
+    width: 98%;
+    border: 0.1px solid transparent;
+}
+
+#username{
+    height: 90%;
+    width: 98%;
+    border-radius: 2vw;
+    padding-left: 2vw;
+    font-size: 1.2vw;
+    outline: none;
+    border: none;
+}
+
+.userpassword, .loginbtn {
+    display: flex;
+    justify-content: center;
+    height: 3.5vw;
+    width: 98%;
+    border: 0.1px solid transparent;
+}
+
+#user-pass{
+    height: 90%;
+    width: 98%;
+    border-radius: 2vw;
+    padding-left: 2vw;
+    font-size: 1.2vw;
+    padding-right: 1vw;
+    outline: none;
+    border: none;
+}
+
+#userlogind{
+    height: 90%;
+    width: 40%;
+    border-radius: 2vw;
+    font-size: 1.4vw;
+    color: #fff;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-weight: 700;
+
+}
+
+
+#sign-up-link{height: 3vw;
+    width: 30%;
+    border-radius: 1.5vw;
+    font-size: 1.4vw;
+    color: #fff;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+.login-signup{
+    height: 70vh;
+    width: 30%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.login-signup.flip1{
+    transform: rotateY(180deg);
+}
+
+.login-signup.flip2{
+    transform: rotateY(180deg);
+}
+
+
+#login-form,#signupform{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+#login-form {
+    position: absolute;
+    align-items: center;
+    justify-content: center; 
+    transform: rotateY(0deg); 
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+#signupform {
+    position: absolute;
+    transform: rotateY(180deg);
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+#form-overlay{
+    display: none;
+}
+
+/* #sfomxmark{
+    position: absolute;
+    left: 10vw;
+    top: 0;
+    border: #000000;
+} */
+
+
+/* ..........................PAGE SECTION 1......................... */
+
+#pg-section{
+    height: 100vw;
+    width: 100%;
+    border: 0.1px solid black;
+    background-image: linear-gradient(to left top, #051937 20%, #004d7a 60%, #008793 90%);
+   /* background-image: repeating-linear-gradient(to left bottom, #051937 30%, #004d7a 35%, #008793 40%);*/
+}
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 100%;
+    background-color: #131921;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    color: #fff;
+    position: fixed;
+    z-index: 100;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    height: 58px;
+    width: 98vw;
+    border: 0.1pt solid transparent;
+    margin: 0 auto;
+}
+
+.logo-title{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20vw;
+    border: 0.1pt solid transparent;
+}
+
+#logobox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vw;
+    width: 4vw;
+    border: 0.1pt solid transparent;
+    font-size: 3vw;
+}
+
+#titlebox{
+    display: flex;
+    color: white;
+    height: 7vw;
+    width: 14vw;
+    border: 0.1pt solid transparent;
+}
+/* ............................................. */
+#nav-searchbox{
+    display: flex;
+    justify-content: center;
+    height: 3vw;
+    border: 0.1pt solid transparent;
+    border-radius: 2.5vw;
+    background-color: rgba(255, 255, 255, 0.195);
+    color: transparent;
+    font-size: 2vw;
+    cursor: pointer;
+    position: relative;
+}
+
+#nav-searchbox {
+    height: 3vw;
+    width: 40vw;
+    background-color: transparent;
+    color: #131921;
+}
+
+#searchinput{
+    border: 0.1px solid transparent;
+    height: 3vw;
+    width: 90%;
+    border-top-left-radius: 2.5vw;
+    border-bottom-left-radius: 2.5vw;
+    outline: none;
+    color: #131921;
+    padding-left: 2vw;
+    padding-right: 1vw;
+    font-size: 1.5vw;
+    background-color: #ffffff;
+}
+#nav-searchbox:hover {
+    box-shadow: 0 0 0.1vw 0.1vw rgb(255, 255, 255);
+}
+
+
+
+#searchlogo{
+    display: flex;
+    width: 10%;
+    height: 3vw;
+    border-top-right-radius: 2.5vw;
+    border-bottom-right-radius: 2.5vw;
+    color: #ffffff;
+    background-color: #edab30;
+    background-image: linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    border: 0.1px solid rgba(255, 255, 255, 0.829);
+    justify-content: center;
+}
+
+
+
+
+
+#darkmode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    height: 3.1vw;
+    width: 3.2vw;
+    font-size: 2vw;
+    background-color: #ffffff72;
+    transition: 0.1s;
+    color: #051937;
+    border: 0.3vw solid transparent;
+    border-radius: 50%;
+}
+
+#darkmode:hover{
+    rotate: 180deg;
+}
+
+
+#nav-options{
+    width: 20vw;
+    height: 98%;
+    border: 0.1px solid transparent;
+    background-color: transparent;
+    display: flex;
+    place-self: right;
+}
+
+
+.nav-btns{
+    height: 8vw;
+    width: 100%;
+    border: 2px solid transparent;
+    display: flex;
+    color: #051937;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+
+.navbtnslogo{
+    display: flex;
+    justify-content: center;
+    height: 3.2vw;
+    width: 3.2vw;
+    border: 0.3vw solid transparent;
+    border-radius: 3.5vw;
+    background-color: #ffffff72;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+
+#nav-user{
+    display: flex;
+    justify-content: center;
+    height: 3.2vw;
+    width: 3.2vw;
+    border: 0.3vw solid transparent;
+    border-radius: 3.5vw;
+    background-color: #ffffff6e;
+    font-size: 2.3vw;
+    color: #051937;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#form-overlay{
+    height: 100vh;
+    width: 100%;
+    background-color: #464444bd;
+    position: absolute;
+    top: 0;
+    backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;  
+    display: flex;
+    z-index: 101;
+}
+
+
+
+
+
+
+
+@keyframes signup {
+     
+}
+
+#signupform{
+    height: 70vh;
+    width: 100%;
+    border: 0.1px solid white;
+    border-radius: 1vw;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    animation: signup 2s  ease-in-out infinite alternate-reverse;
+    display: none;
+    display: block;
+}
+
+
+
+.sfomtop{
+    height: 15%;
+    width: 100%;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+
+#sfomxmark{
+    position: absolute;
+    right: -2vw;
+    top: -3vw;
+    border: 0.1px solid transparent;
+    cursor: pointer;
+    font-size: 1.1vw;
+    color: #ffffff81;
+}
+
+
+
+.sfombody{
+    height: 70%;
+    width: 100%;
+    border: 0.1px solid transparent;
+    place-items: center;
+}
+
+
+
+
+#supform{
+    height: 100%;
+    width: 98%;
+    border: 0.1px solid transparent;
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.supfcontentbox{
+    height: 4.5vw;
+    width: 98%;
+    border: 0.1px solid transparent;
+    place-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.snamesinput{
+    height: 70%;
+    width: 48%;
+    border-radius: 1.5vw;
+    border: none;
+    padding-left: 1.1vw;
+    font-size: 1.4vw;
+}
+.snamesinput:focus{
+    outline: none;
+}
+
+
+.sfdobbox{
+    height: 100%;
+    width: 98%;
+    border-radius: 0.4vw;
+    border: 0.1px solid transparent;
+}
+
+
+.dobtile{
+    display: flex;
+    border: 0.1px solid transparent;
+    justify-content: space-between;
+}
+
+.dobtile p {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#dobalert{
+    display: flex;
+    justify-content: center;
+    height: 1vw;
+    width: 1vw;
+    color: red;
+    background-color: white;
+    border-radius: 50%;
+    border: 0.1px solid transparent;
+}
+
+.dobinputs{
+    height: 3vw;
+}
+
+.input-date-email-pass{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5vw;
+    border: none;
+    outline: none;
+    padding-left: 1vw;
+    padding-right: 1.5vw;
+    font-size: 1.1vw;
+}
+
+#sfomsubmit{
+    height: 3vw;
+    width: 40%;
+    border-radius: 1.5vw;
+    font-size: 1.4vw;
+    color: #fff;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-weight: 700;
+}
+
+
+.sfombottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    border-top: 0.1px solid rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    color: #fff;
+}
+
+#login-form-link-btn{
+    height: 3vw;
+    width: 30%;
+    border-radius: 1.5vw;
+    font-size: 1.4vw;
+    color: #fff;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-weight: 700;
+}
+
+
+
+.Signup-details{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 2vw;
+    height: 200px;
+    width: 200px;
+    border: 1px solid white;
+    color: #fff;
+    place-content: center;
+    opacity: 0;
+}
+
+
+
+
+/* ..................................................... */
+
+#login-form{
+    height: 70vh;
+    width: 100%;
+    border: 0.1px solid white;
+    border-radius: 1vw;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    animation: signup 2s  ease-in-out infinite alternate-reverse;
+    display: block;
+    
+}
+.lfomtop{
+    height: 15%;
+    width: 100%;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+
+#lfomxmark{
+    position: absolute;
+    right: -2vw;
+    top: -3vw;
+    border: 0.1px solid transparent;
+    cursor: pointer;
+    font-size: 1.1vw;
+    color: #ffffff81;
+}
+
+
+
+.lfombody{
+    height: 70%;
+    width: 100%;
+    border: 0.1px solid transparent;
+    place-items: center;
+}
+
+.lfombottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    border-top: 0.1px solid rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    color: #fff;
+}
+
+
+.user-login-logo{
+    display: flex;
+    justify-content: center;
+    height: 22vh;
+    width: 22vh;
+    border: 0.1px solid white;
+    font-size: 20vh;
+    border: 1vw solid white;
+    border-radius: 50%;
+    color: #051937;
+    background-color: #fff;
+    margin-top: 1vh;
+}
+
+
+#loginform{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 1vh;
+    height: 25vh;
+    width: 98%;
+    border: 0.1px solid transparent;
+}
+
+.login-username-inputs{
+    display: flex;
+    justify-content: space-evenly;
+    height: 3.5vw;
+    width: 98%;
+    border: 0.1px solid transparent;
+}
+
+#username{
+    height: 90%;
+    width: 98%;
+    border-radius: 2vw;
+    padding-left: 2vw;
+    font-size: 1.2vw;
+    outline: none;
+    border: none;
+}
+
+.userpassword, .loginbtn {
+    display: flex;
+    justify-content: center;
+    height: 3.5vw;
+    width: 98%;
+    border: 0.1px solid transparent;
+}
+
+#user-pass{
+    height: 90%;
+    width: 98%;
+    border-radius: 2vw;
+    padding-left: 2vw;
+    font-size: 1.2vw;
+    padding-right: 1vw;
+    outline: none;
+    border: none;
+}
+
+#userlogind{
+    height: 90%;
+    width: 40%;
+    border-radius: 2vw;
+    font-size: 1.4vw;
+    color: #fff;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-weight: 700;
+
+}
+
+
+#sign-up-link{height: 3vw;
+    width: 30%;
+    border-radius: 1.5vw;
+    font-size: 1.4vw;
+    color: #fff;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+.login-signup{
+    height: 70vh;
+    width: 30%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.login-signup.flip1{
+    transform: rotateY(180deg);
+}
+
+.login-signup.flip2{
+    transform: rotateY(180deg);
+}
+
+
+#login-form,#signupform{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+#login-form {
+    position: absolute;
+    align-items: center;
+    justify-content: center; 
+    transform: rotateY(0deg); 
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+#signupform {
+    position: absolute;
+    transform: rotateY(180deg);
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+#form-overlay{
+    display: none;
+}
+
+/* #sfomxmark{
+    position: absolute;
+    left: 10vw;
+    top: 0;
+    border: #000000;
+} */
+
+
+/* ..........................PAGE SECTION 1......................... */
+
+#pg-section{
+    height: 100vw;
+    width: 100%;
+    border: 0.1px solid black;
+    background-image: linear-gradient(to left top, #051937 20%, #004d7a 60%, #008793 90%);
+   /* background-image: repeating-linear-gradient(to left bottom, #051937 30%, #004d7a 35%, #008793 40%);*/
+}
