@@ -517,6 +517,10 @@ a{
     width: 100%;
     border: 0.1px solid transparent;
     place-items: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
 }
 
 .lfombottom{
