@@ -175,8 +175,7 @@ searchicon.onclick = () => {
   
   if (searchbox.style.top === "-5vh") { // Use comparison operator
     searchbox.style.top = "10vh";
-  } else if (searchbox.style.top === "10vh") { // Use comparison operator
-    searchbox.style.top = "-15vh";
+  
   } else {
     searchbox.style.top = "-5vh"; // To ensure we have a fallback
   }
